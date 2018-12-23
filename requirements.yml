@@ -1,3 +1,8 @@
 ---
 - src: geerlingguy.packer-debian
 - src: geerlingguy.nfs
+- src: gantsign.intellij
+- src: gantsign.java
+- src: geerlingguy.git
+- src: gantsign.maven
+- src: angstwad.docker_ubuntu
