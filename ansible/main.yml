@@ -4,22 +4,17 @@
   gather_facts: yes
 
   roles:
-    - role: geerlingguy.nfs
-    - role: geerlingguy.packer-debian
-    - role: geerlingguy.git
-    - role: gantsign.intellij
-      intellij_edition: community
-    - role: gantsign.java
-      java_version: '8'
-      java_license_declaration: 'I accept the "Oracle Binary Code License Agreement for the Java SE Platform Products and JavaFX" under the terms at http://www.oracle.com/technetwork/java/javase/terms/license/index.html'
-    - role: gantsign.maven
-      maven_version: '3.6.0'
+    - geerlingguy.nfs
+    - geerlingguy.packer-debian
+    - geerlingguy.git
+    - geerlingguy.docker
+    - gantsign.intellij
+    - gantsign.java
+    - gantsign.maven
   
   tasks:
-    - apt: "name={{ item }} state=installed"
-      with_items:
-        - ubuntu-desktop
-        - git
+    - apt:
+        name:
         - wget
         - curl
         - vim

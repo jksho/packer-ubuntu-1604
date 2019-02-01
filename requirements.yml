@@ -4,5 +4,5 @@
 - src: gantsign.intellij
 - src: gantsign.java
 - src: geerlingguy.git
+- src: geerlingguy.docker
 - src: gantsign.maven
-- src: angstwad.docker_ubuntu
