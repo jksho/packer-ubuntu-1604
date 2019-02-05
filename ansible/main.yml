@@ -11,7 +11,8 @@
     - gantsign.intellij
     - gantsign.java
     - gantsign.maven
-  
+    - cmprescott.chrome
+
   tasks:
     - apt:
         name:
